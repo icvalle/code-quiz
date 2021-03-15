@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="viewHighScores"><a href="#">View Highscores</a></div>
-        <div id="timeTracker">Time: 0</div>
+        <div id="timeT"></div>
     </header>
 
     <main>
@@ -21,11 +21,10 @@
         </section>
         <section id="question1">
             <h3>Commonly used data types DO NOT include:</h3>
-            <button class="option1">1. strings</button>
-            <button class="option2">2. booleans</button>
-            <button class="option3">3. alerts</button>
-            <button class="option4">4. numbers</button>
-            <div id="correctness"></div>
+            <button id="one1">1. strings</button>
+            <button id="one2">2. booleans</button>
+            <button id="one3">3. alerts</button>
+            <button class="one">4. numbers</button>
         </section>
         <section id="question2">
             <h3>The condition in an if/else statement is enclosed within _____.</h3>
@@ -33,7 +32,6 @@
             <button class="option2">2. curly brackets</button>
             <button class="option3">3. parenthesis</button>
             <button class="option4">4. square brackets</button>
-            <div id="correctness"></div>
         </section>
         <section id="question3">
             <h3>Arrays in JavaScript can be used to store _____ .</h3>
@@ -41,7 +39,6 @@
             <button class="option2">2. other arrays</button>
             <button class="option3">3. booleans</button>
             <button class="option4">4. all of the above</button>
-            <div id="correctness"></div>
         </section>
         <section id="question4">
             <h3>String values must be enclosed within ______ when being assigned to variables.</h3>
@@ -49,7 +46,6 @@
             <button class="option2">2. curly brackets</button>
             <button class="option3">3. quotes</button>
             <button class="option4">4. parenthesis</button>
-            <div id="correctness"></div>
         </section>
         <section id="question5">
             <h3>A very useful tool used during development and debugging for printing content to the debugger is:</h3>
@@ -57,7 +53,6 @@
             <button class="option2">2. terminal/bash</button>
             <button class="option3">3. for loops</button>
             <button class="option4">4. console.log</button>
-            <div id="correctness"></div>
         </section>
         <section id="results">
             <h2>All done!</h2>
@@ -67,13 +62,13 @@
                 <input type="text" id="initials" name="initials">
                 <input type="submit" value="Submit">
             </form>
-            <div id="correctness"></div>
         </section>
+        <div id="correctness"></div>
         <section id="highScores">
             <h2>High scores</h2>
-            <textarea readonly rows="1" cols="30"></textarea>
+            <textarea readonly rows="1" cols="30" id="initialScore"></textarea>
             <button class="scoreBtns">Go Back</button>
-            <button class="scoreBtns">Clear Highscores</button>
+            <button id="clearScore" class="scoreBtns">Clear Highscores</button>
         </section>
     </main>
     <script src="assets/js/script.js"></script>
